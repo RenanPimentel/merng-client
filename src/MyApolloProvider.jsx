@@ -8,7 +8,9 @@ import {
   ApolloProvider,
 } from "@apollo/client";
 
-const httpLink = createHttpLink({ uri: "http://localhost:5000" });
+const httpLink = createHttpLink({
+  uri: "https://rocky-waters-58515.herokuapp.com/",
+});
 
 const authLinks = setContext(() => {
   const token = localStorage.getItem("jwtToken");
