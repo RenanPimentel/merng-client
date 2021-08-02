@@ -4,7 +4,7 @@ import { Menu } from "semantic-ui-react";
 import { AuthContext } from "../context/auth";
 
 function Navbar() {
-  const { login, logout, user } = useContext(AuthContext);
+  const { logout, user } = useContext(AuthContext);
   const history = useHistory();
   const [activeItem, setActiveItem] = useState("");
   const [menuItems] = useState([
